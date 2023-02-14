@@ -1,0 +1,222 @@
+<!doctype html>
+
+<head>
+
+<title>feedbackscreen</title>
+
+
+
+</head>
+
+
+<body>
+
+ 
+ <nav class="col-1">
+
+  <a>Home</a>
+  
+  <a> Authors </a>
+  
+ <a>Tests</a>
+  
+  <a>Feedback</a>
+
+	 <a>About us</a>
+ 
+
+ </nav>
+  
+<div class="col-2">
+  
+  <header>
+	
+<input type="text">
+  
+  <button>Search</button>
+			
+			
+ </header>
+			
+
+    <main class="content">
+ 
+   <article>
+      
+ 
+     
+      <title>feedback</title>
+
+
+ 
+<form class="myForm">
+ 
+ <div class="message">
+ 
+   <label for="msg">Message</label>
+  
+  <textarea id="msg"></textarea>
+ 
+ </div>
+  <div class="contact">
+   
+ <label for="name">Name</label>
+  
+  <input type="text" id="name">
+
+ 
+   <label for="townborn">Date of birth</label>
+  
+  <input type="date" id="birthdate">
+
+   
+ <label for="email">Email Address</label>
+ 
+   <input type="email" id="email"> 
+
+
+    <button type="submit">Submit</button>
+	</article>
+
+  </div>
+  
+  </main>
+ 
+ </div>
+
+ <style>
+
+  
+nav{
+display: flex;
+flex-direction: column;
+align-items: stretch;
+
+
+
+
+
+}
+ nav >  a
+   {
+	font-weight: bold;
+font-size: 24px;
+background-color: #00203FFF;
+color: white;
+padding: 5px 15px;
+border-radius: 50px;
+    margin: 10px;
+
+   }
+   nav > a:hover {
+    background-color: steelblue;
+  }
+
+
+  * {
+    box-sizing: border-box; 
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    
+
+    margin: 0;
+  }
+  .col-1 {
+    background-attachment: fixed;
+    background: #ADEFD1FF ;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  footer {
+    background: skyblue;
+    height: 20vh;
+  }
+
+  
+  header, footer, article, nav {
+    padding: 1em;
+  }
+   
+  /* feedbackform*/
+  .myForm {
+    display: flex;
+    background-color: skyblue;
+    border-radius: 3px;
+    padding: 1.8em;
+  }
+  .message {
+   	margin-right: 2em; 
+    display: flex;
+    flex-direction: column;
+
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+
+  }
+  .contact {
+   	flex: 1; 
+  }
+  .contact input {
+    width: 100%;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+
+  }
+  .contact button {
+   background: grey;
+   color: white;
+   border: 0;
+  }
+  
+/* header*/
+      header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header  > input{
+        height: 50px;
+        width: 320px;
+        background-color: #CCDEDC;
+        border-radius: 50px;
+        border: 1px solid #CCDEDC;
+    }
+
+    /* search button*/
+    header > button{
+        height: 54px;
+        width: 94px;
+        background-color: #007b77;
+        color: #ffffff;
+        text-transform: uppercase;
+        border-style: none;
+        border-radius: 50px;
+    }
+    header > button:hover {
+      background-color: steelblue;
+    }
+
+    </style>

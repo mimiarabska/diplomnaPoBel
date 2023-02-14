@@ -1,0 +1,278 @@
+<!doctype html>
+
+<head>
+
+<title>aboutusscreen</title>
+
+
+
+</head>
+
+<body>
+ 
+ <nav class="col-1">
+
+  <a>Home</a>
+  
+  <a>Authors</a>
+  
+ <a>Tests</a>
+  
+  <a>Feedback</a>
+
+	 <a>About us</a>
+ 
+
+ </nav>
+  
+<div class="col-2">
+  
+  <header>
+	
+<input type="text">
+  
+  <button>Search</button>
+			
+			
+ </header>
+ 
+ <style>
+  nav{
+display: flex;
+flex-direction: column;
+align-items: stretch;
+background-color: pink;
+
+
+}
+nav >  a
+ {
+font-weight: bold;
+font-size: 24px;
+background-color: #00203FFF;
+color: white;
+padding: 5px 15px;
+border-radius: 50px;
+  margin: 10px;
+
+ }
+ nav > a:hover {
+          background-color: steelblue;
+        }
+
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+
+  margin: 0;
+}
+.col-1 {
+  background: #ADEFD1FF ;
+  flex: 1;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content > article {
+  flex: 4;
+  min-height: 60vh;
+}
+footer {
+  background: skyblue;
+  height: 20vh;
+}
+
+header, footer, article, nav {
+  padding: 1em;
+}
+ 
+
+.myForm {
+  display: flex;
+  background-color: skyblue;
+  border-radius: 3px;
+  padding: 1.8em;
+}
+.message {
+   margin-right: 2em; 
+  display: flex;
+  flex-direction: column;
+
+}
+.message > textarea {
+ flex: 1; 
+ min-width: 18em;
+
+}
+.contact {
+   flex: 1; 
+}
+.contact input {
+  width: 100%;
+}
+.contact input,
+.contact button {
+  padding: 1em;
+  margin-bottom: 1em;
+
+}
+.contact button {
+ background: grey;
+ color: white;
+ border: 0;
+}
+
+
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+  header  > input{
+      height: 50px;
+      width: 320px;
+      background-color: #CCDEDC;
+      border-radius: 50px;
+      border: 1px solid #CCDEDC;
+  }
+  header > button{
+      height: 54px;
+      width: 94px;
+      background-color: #007b77;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 50px;
+     }   
+     
+     header > button:hover {
+          background-color: steelblue;
+        }
+
+  </style>
+
+
+    <main class="content">
+	
+	<article>
+	
+<h2 style="text-align:center">Creators of the website</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="mariaphoto.jpg" alt="Maria" style="width:100%" style = "height:100%">
+      <div class="container">
+        <h2>Maria Arabska</h2>
+        <p class="title">Databases & Designer</p>
+        <p>Maria is a student in PGMT"Prof. Tsvetan Lazarov" from 12a grade. She likes leaning new things, enjoys drawing, traveling and hanging out with friends in her free time.</p>
+        <p>mimi_arabska@abv.bg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="linaphoto.jpg" alt="Lina" style="width:100%" style = "height:100%">
+      <div class="container">
+        <h2>Ilina Kidikova</h2>
+        <p class="title">Databases & Designer</p>
+        <p>Lina is a student in PGMT"Prof. Tsvetan Lazarov" from 12a grade. She likes leaning new things,traveling and hanging out with friends in her free time.</p>
+        <p>kidikova_3@abv.bg</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  
+  article > body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 34%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.card img
+{
+	height: 380px
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+  
+  </style>
