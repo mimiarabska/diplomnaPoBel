@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Literaturework</title>
+</head>
+        
+<body>
+ 
+ <nav class="col-1">
+
+  <a>Home</a>
+  
+  <a>Authors</a>
+  
+ <a>Tests</a>
+  
+  <a>Feedback</a>
+
+     <a>About us</a>
+ 
+
+ </nav>
+  
+<div class="col-2">
+  
+  <header>
+    
+<input type="text">
+  
+  <button>Search</button>
+            
+            
+ </header>
+ <section> 
+
+  <h2 class="center">     
+ </h2>Йордан Йовков</h2>
+
+</section>
+
+ <main class="content">
+
+    <article>
+    
+        <div class="center">
+         
+           
+            <img src="https://uchiteli.bg/public/uploads/files/Yovkov.jpg" alt="Sample photo">
+            <div class="center">
+     
+             
+
+</article>
+
+<aside>
+  <p>Роден е на 9 ноември 1880 година. Йовков преминава детските и юношеските години в родното си място (Жеравна). Учи в Жеравна, а след това в 1895 година завършва основното си образование в Котел. Завършва гимназия в София в 1900 година. Учителят му по литература – поетът Иван Грозев, му предсказва бъдеще на писател.
+
+    След дипломирането си живее в Добруджа, където се преселва семейството му. През 1900 година се преселва в село Долен извор. Завършва школата за запасни офицери в Княжево (1902 – 1904), като по време на обучението си публикува първата си творба – стихотворението „Под тежкия кръст“ (вестник „Съзнание“, бр. 9, 26 октомври 1902 година). В началото на 1904 година се записва в Юридическия факултет на Софийския университет, но смъртта на баща му осуетява следването му.
+    
+    Есента на 1904 година Йовков се завръща в Долен извор и учителства в различни добруджански села до 1912 година, когато е мобилизиран. Участва в Балканската и Междусъюзническата война като командир на рота в 41 пехотен полк. През юни 1913 година е ранен по време на битката край Дойран, а месец по-късно е повишен в чин.</p>
+</p>
+</aside>
+
+<style>
+nav{
+display: flex;
+flex-direction: column;
+align-items: stretch;
+background-color: pink;
+
+
+}
+nav >  a
+ {
+font-weight: bold;
+font-size: 24px;
+background-color: #00203FFF;
+color: white;
+padding: 5px 15px;
+border-radius: 50px;
+  margin: 10px;
+
+ }
+ nav > a:hover {
+          background-color: steelblue;
+        }
+
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+
+  margin: 0;
+}
+.col-1 {
+  background: #ADEFD1FF ;
+  flex: 1;
+}
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content > article {
+  flex: 4;
+  min-height: 60vh;
+}
+footer {
+  background: skyblue;
+  height: 20vh;
+}
+
+header, footer, article, nav {
+  padding: 1em;
+}
+ 
+
+.myForm {
+  display: flex;
+  background-color: skyblue;
+  border-radius: 3px;
+  padding: 1.8em;
+}
+.message {
+   margin-right: 2em; 
+  display: flex;
+  flex-direction: column;
+
+}
+.message > textarea {
+ flex: 1; 
+ min-width: 18em;
+
+}
+.contact {
+   flex: 1; 
+}
+.contact input {
+  width: 100%;
+}
+.contact input,
+.contact button {
+  padding: 1em;
+  margin-bottom: 1em;
+
+}
+.contact button {
+ background: grey;
+ color: white;
+ border: 0;
+}
+
+
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+  }
+  header  > input{
+      height: 50px;
+      width: 320px;
+      background-color: #CCDEDC;
+      border-radius: 50px;
+      border: 1px solid #CCDEDC;
+  }
+  header > button{
+      height: 54px;
+      width: 94px;
+      background-color: #007b77;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 50px;
+     }   
+     
+     header > button:hover {
+          background-color: steelblue;
+        }
