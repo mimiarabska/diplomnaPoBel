@@ -7,16 +7,16 @@
 <body>
  
  <nav class="col-1">
+  
+<a href ="Welcome.html">Home</a>
+  
+<a href ="avtoriview.html">Authors</a>
+ 
+<a href ="DZI.html">Tests</a>
+ 
+<a href ="screenfeedback.html">Freedback</a>
 
-  <a>Home</a>
-  
-  <a>Authors</a>
-  
- <a>Tests</a>
-  
-  <a>Feedback</a>
-
-     <a>About us</a>
+<a href ="AboutUs.html">About us</a>
 
  
 
@@ -25,7 +25,7 @@
 <div class="col-2">
   
   <header>
-    
+
 <input type="text">
   
   <button>Search</button>
@@ -104,22 +104,50 @@ display: flex;
 flex-direction: column;
 align-items: stretch;
 background-color: pink;
+}
 
 
+
+.back-link {
+  display: inline-block;
+  margin: 10px;
+}
+
+.back-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.back-link .arrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
 }
 nav >  a
  {
-font-weight: bold;
+  font-weight: bold;
 font-size: 24px;
-background image-rendering: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F1407443624762205%2F&psig=AOvVaw3KdMWXOcZVW8Eq2-ll6mID&ust=1676294476820000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMD_qvaJkP0CFQAAAAAdAAAAABAD";
+background-color: rgb(50, 52, 54);
 color: white;
 padding: 5px 15px;
 border-radius: 50px;
   margin: 10px;
 
  }
+ body{
+  background-image: url(https://scontent.fsof8-1.fna.fbcdn.net/v/t1.15752-9/328973276_511289307844941_8170641312039725254_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=D_SI48woIcEAX94QCGF&_nc_ht=scontent.fsof8-1.fna&oh=03_AdShzDjjZxg41VNcfvW4ZLPwiPdrnF-k2MXwaC11S4WLJw&oe=641B2A86);
+
+ }
  nav > a:hover {
-          background-color: burlywood;
+          background-color: steelblue;
         }
 
 
@@ -134,7 +162,9 @@ body {
 
   margin: 0;
 }
- ;
+
+.col-1 {
+  background: rgb(143, 189, 201);
   flex: 1;
 }
 .col-2 {
@@ -213,12 +243,13 @@ header, footer, article, nav {
   header > button{
       height: 54px;
       width: 94px;
-      background-color: #007b77;
+      background-color: rgb(50, 52, 54);
       color: #ffffff;
       text-transform: uppercase;
       border-style: none;
       border-radius: 50px;
-     }   
+     } 
+       
      
      header > button:hover {
           background-color: steelblue;
