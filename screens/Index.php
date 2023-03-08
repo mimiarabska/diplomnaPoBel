@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Literaturework</title>
+    <link rel = "stylesheet" href="design.css">
+    <link rel = "stylesheet" href="Index.css">
+	<meta charset="UTF-8">
+</head>
+        
+<body>
+ 
+ <nav class="col-1">
+
+  <a href="Welcome.html" target="_blank">Начало</a>
+  
+  <a href="avtoriview.html" target="_blank">Автори</a>
+  
+  <a href="DZI.html" target="_blank">Тестове</a>
+  
+  <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
+
+     <a href="AboutUs.html" target="_blank">За нас</a>
+	
+    
+ </nav>
+
+<div class="col-2">
+  
+  <header>
+   
+<div class="back-link">
+  <a href="#" onclick="history.back()">
+    <span class="arrow">&larr;</span> Back
+  </a>
+</div>
+<input type="text">
+  
+  <button>Търсене</button>
+            
+            
+ </header>
+
+ <main class="content">
+  <?php
+  require_once "config.php";
+  //Attempt select query execution
+  $sql = "SELECT * FROM category";
+  if($result = msqli_query($link, $sql ))
+  if(mysqli_num_rows($result) > 0){
+  while($row = mysql_fetch_array($result)){
+  echo '<a href="category.php?categoryId=' . $row['categoryID'] . '">';
+  echo "<button>";
+  eho $row['CategoryTittle'];
+  eeho"</button>";
+  echo "</a>";
+  }
+  
+  //Free result set
+  
+  mysqli_free_result($result);
+  } else{
+  echo "No records matching your query were found.";
+  }else
+  echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+  ?>
+    <article>
+<h1>Добре дошли!</h1>
+<h3>Материали в помощ ДЗИ БЕЛ</h3>
+<h4>11, 12 клас</h4>
+<h2>Теми</h2>
+    <div class="button-grid">
+    <button>Родното и чуждото</button>
+    <button>Миналото и паметта</button>
+    <button>Обществото и властта</button>
+    <button>Животът и смъртта</button>
+    <button>Природата</button>
+    <button>Любовта</button>
+    <button>Вярата и надеждата</button>
+    <button>Трудът и творчеството</button>
+    <button>Изборът и раздвоението</button> 
+  </div>
+
+
+</article>
+</body>
+
+
+
+
+
+ 
+
+
+
