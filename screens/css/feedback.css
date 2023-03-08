@@ -1,0 +1,63 @@
+.myForm {
+    display: flex;
+    background-color:  rgb(143, 189, 201);
+    border-radius: 3px;
+    padding: 1.8em;
+  }
+  .message {
+   	margin-right: 2em; 
+    display: flex;
+    flex-direction: column;
+
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+
+  }
+  .contact {
+   	flex: 1; 
+  }
+  .contact input {
+    width: 100%;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+
+  }
+  .contact button {
+   background: grey;
+   color: white;
+   border: 0;
+  }
+  
+/* header*/
+      header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    header  > input{
+        height: 50px;
+        width: 320px;
+        background-color: #CCDEDC;
+        border-radius: 50px;
+        border: 1px solid #CCDEDC;
+    }
+
+    /* search button*/
+    header > button{
+          height: 54px;
+      width: 94px;
+      background-color: rgb(50, 52, 54);
+      color: #ffffff;
+      text-transform: uppercase;
+      border-style: none;
+      border-radius: 50px;
+    }
+    header > button:hover {
+      background-color: steelblue;
+    }
