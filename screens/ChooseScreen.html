@@ -2,22 +2,23 @@
     <head>
 
         <title>Literatureworks</title>
-        
-        
+        <link rel = "stylesheet" href="design.css">
+        <link rel = "stylesheet" href="ChooseScreen.css">
+        <meta charset="UTF-8">
     </head>
         
         <body>
          
          <nav class="col-1">
-          <a href ="Welcome.html">Home</a>
+          <a href="Welcome.html" target="_blank">Начало</a>
   
-          <a href ="avtoriview.html">Authors</a>
-           
-          <a href ="DZI.html">Tests</a>
-           
-          <a href ="screenfeedback.html">Freedback</a>
+          <a href="avtoriview.html" target="_blank">Автори</a>
           
-          <a href ="AboutUs.html">About us</a>
+          <a href="DZI.html" target="_blank">Тестове</a>
+          
+          <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
+        
+             <a href="AboutUs.html" target="_blank">За нас</a>
          
         
          </nav>
@@ -35,143 +36,7 @@
                     
         
             <main class="content">
-            
-<style>
-    nav{
-display: flex;
-flex-direction: column;
-align-items: stretch;
-background-color: pink;
-
-
-}
- nav >  a
-   {
-    font-weight: bold;
-        font-size: 24px;
-        background-color: rgb(50, 52, 54);
-        color: white;
-        padding: 5px 15px;
-        border-radius: 50px;
-        margin: 10px;
-
-   }
-   body{
-  background-image: url(https://scontent.fsof8-1.fna.fbcdn.net/v/t1.15752-9/328973276_511289307844941_8170641312039725254_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=D_SI48woIcEAX94QCGF&_nc_ht=scontent.fsof8-1.fna&oh=03_AdShzDjjZxg41VNcfvW4ZLPwiPdrnF-k2MXwaC11S4WLJw&oe=641B2A86);
-
- }
-    nav > a:hover {
-          background-color: steelblue;
-        }
-
-
-  * {
-    box-sizing: border-box; 
-  }
-
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-
-    margin: 0;
-  }
-  .col-1 {
-    background: rgb(143, 189, 201);
-        flex: 1;
-  }
-  .col-2 {
-    display: flex;
-    flex-direction: column;
-    flex: 5;
-  }
-  .content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  .content > article {
-    flex: 4;
-    min-height: 60vh;
-  }
-  footer {
-    background: skyblue;
-    height: 20vh;
-  }
-  
-  header, footer, article, nav {
-    padding: 1em;
-  }
-   
-  
-  .myForm {
-    display: flex;
-    background-color: skyblue;
-    border-radius: 3px;
-    padding: 1.8em;
-  }
-  .message {
-   	margin-right: 2em; 
-    display: flex;
-    flex-direction: column;
-
-  }
-  .message > textarea {
-   flex: 1; 
-   min-width: 18em;
-
-  }
-  .contact {
-   	flex: 1; 
-  }
-  .contact input {
-    width: 100%;
-  }
-  .contact input,
-  .contact button {
-    padding: 1em;
-    margin-bottom: 1em;
-
-  }
-  .contact button {
-   background: grey;
-   color: white;
-   border: 0;
-  }
-  
-
-      header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-    header  > input{
-        height: 50px;
-        width: 320px;
-        background-color: #CCDEDC;
-        border-radius: 50px;
-        border: 1px solid #CCDEDC;
-    }
-    header > button{
-      height: 54px;
-      width: 94px;
-      background-color: rgb(50, 52, 54);
-      color: #ffffff;
-      text-transform: uppercase;
-      border-style: none;
-      border-radius: 50px;
-        }
-        header > button:hover {
-          background-color: steelblue;
-        }
-    
-        </style>
-
-
-
-
-
+          
 
             <article>
             
@@ -216,115 +81,4 @@ background-color: pink;
       </div>
     </div>
 
-          <style>
-          
-          article > body {
-          /*font-family: Helvetica, Arial, sans-serif;*/
-          font-family: Comic Sans MS;
-          margin: 0;
-        }
-
-       article > h2 {
-    display: flex;
-    width: 100%;
-    font-family: Arial;
-    font-size: 35px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-h2:before,
-h2:after {
-    content: '';
-    border-top: 2px solid;
-    margin: 0 20px 0 0;
-    flex: 1 0 20px;
-}
-
-h2:after {
-    margin: 0 0 0 20px;
-}
-        
-        html {
-          box-sizing: border-box;
-        }
-        
-        *, *:before, *:after {
-          box-sizing: inherit;
-        }
-        
-        .column {
-          float: left;
-         /* width: 34%;*/
-          margin-bottom: 16px;
-          /*font-family:Helvetica;
-          font-size: 20px;  */
-          padding: 0 8px;
-        }
- 
-       .card {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-
-  
-        .card img
-        {
-            height: 400px;
-        }
-     
-        
-        .about-section {
-          padding: 50px;
-          text-align: center;
-          background-color: #474e5d;
-          color: white;
-        }
-        
-        .container {
-          padding: 0 16px;
-        }
-        
-        .container::after, .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        
-        
-
-        .author {
-          color: black;
-          font-family:Helvetica;
-          font-size: 20px;  
-
-        }
-
-
-        .button {
-          border: none;
-          outline: 0;
-          display: inline-block;
-          padding: 12px;
-          color: white;
-          background-color: #000;
-          text-align: center;
-          border-radius: 50px;
-          cursor: pointer;
-          width: 100%;
-          font-family: sans-serif ;
-          font-size: 20px;  
-        }
-        
-        .button:hover {
-          background-color: #555;
-        }
-        
-        @media screen and (max-width: 650px) {
-          .column {
-            width: 100%;
-            display: block;
-          }
-        }
-          
-          </style>
+         
