@@ -40,4 +40,7 @@
       border-image: initial;
   }
   
-  
+
+  .button-grid button:hover {
+    background-color: #555;
+  }

@@ -23,7 +23,7 @@
 	
     
  </nav>
-  
+
 <div class="col-2">
   
   <header>
@@ -41,22 +41,39 @@
  </header>
 
  <main class="content">
-    
+
+ 
+
+ 
     <article>
 <h1>Добре дошли!</h1>
 <h3>Материали в помощ ДЗИ БЕЛ</h3>
 <h4>11, 12 клас</h4>
 <h2>Теми</h2>
     <div class="button-grid">
-    <button>Родното и чуждото</button>
-    <button>Миналото и паметта</button>
-    <button>Обществото и властта</button>
-    <button>Животът и смъртта</button>
-    <button>Природата</button>
-    <button>Любовта</button>
-    <button>Вярата и надеждата</button>
-    <button>Трудът и творчеството</button>
-    <button>Изборът и раздвоението</button> 
+    <?php
+  require_once "config.php";
+   //Attempt select query execution
+   $sql = "SELECT * FROM category";
+   if($result = mysqli_query($link, $sql ))
+   if(mysqli_num_rows($result) > 0){
+   while($row = mysqli_fetch_array($result)){
+   echo '<a href="category.php?categoryId=' . $row['CategoryID'] . '">';
+   echo "<button>";
+   echo $row['CategoryTittle'];
+   echo"</button>";
+   echo "</a>";
+   }
+   
+   //Free result set
+   
+   mysqli_free_result($result);
+   } else{
+   echo "No records matching your query were found.";
+   }else
+   echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+ 
+  ?>
   </div>
 
 

@@ -29,9 +29,10 @@
   .back-link a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color:  rgb(50, 52, 54);;
     color: #fff;
     text-decoration: none;
+    border-radius: 50px;
   }
   
   .back-link .arrow {
@@ -90,4 +91,7 @@
       border-radius: 50% 20% / 10% 40%;
       border-color: black;
       border-image: initial;
+  }
+  .button-grid button:hover {
+    background-color: #555;
   }

@@ -2,8 +2,8 @@
 <head>
 
     <title>Literaturework</title>
-    <link rel = "stylesheet" href="design.css">
-    <link rel = "stylesheet" href="Index.css">
+    <link rel = "stylesheet" href="css/design.css">
+    <link rel = "stylesheet" href="css/Index.css">
 	<meta charset="UTF-8">
 </head>
         
@@ -30,7 +30,7 @@
    
 <div class="back-link">
   <a href="#" onclick="history.back()">
-    <span class="arrow">&larr;</span> Back
+    <span class="arrow">&larr;</span> Назад
   </a>
 </div>
 <input type="text">
@@ -41,27 +41,31 @@
  </header>
 
  <main class="content">
+
+ 
+
   <?php
   require_once "config.php";
-  //Attempt select query execution
-  $sql = "SELECT * FROM category";
-  if($result = msqli_query($link, $sql ))
-  if(mysqli_num_rows($result) > 0){
-  while($row = mysql_fetch_array($result)){
-  echo '<a href="category.php?categoryId=' . $row['categoryID'] . '">';
-  echo "<button>";
-  eho $row['CategoryTittle'];
-  eeho"</button>";
-  echo "</a>";
-  }
-  
-  //Free result set
-  
-  mysqli_free_result($result);
-  } else{
-  echo "No records matching your query were found.";
-  }else
-  echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+   //Attempt select query execution
+   $sql = "SELECT * FROM category";
+   if($result = msqli_query($link, $sql ))
+   if(mysqli_num_rows($result) > 0){
+   while($row = mysql_fetch_array($result)){
+   echo '<a href="category.php?categoryId=' . $row['CategoryID'] . '">';
+   echo "<button>";
+   echo $row['CategoryTittle'];
+   echo"</button>";
+   echo "</a>";
+   }
+   
+   //Free result set
+   
+   mysqli_free_result($result);
+   } else{
+   echo "No records matching your query were found.";
+   }else
+   echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+ 
   ?>
     <article>
 <h1>Добре дошли!</h1>
