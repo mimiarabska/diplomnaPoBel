@@ -43,22 +43,23 @@
   require_once "config.php";
    //Attempt select query execution
    $sql = "SELECT * FROM category";
+   $cat_tittle= "SELECT CategoryTittle FROM category";
+   $cat_id=$_REQUEST $sql['CategoryID'];
+   var_dump($cat_id);
    if($result = mysqli_query($link, $sql ))
-   if(mysqli_num_rows($result) > 0){
-   while($row = mysqli_fetch_array($result)){
-   echo '<a href="category.php?categoryId=' . $row['CategoryID'] . '">';
+   if(mysqli_num_rows($result) > 0)
+
+   {
+   echo '<a href = "category.php?categoryId=' . $cat_id['CategoryID'] . '">';
    echo "<h2>";
-   echo $row['CategoryTittle'];
+   echo ['CategoryTittle'];
    echo"</h2>";
    echo "</a>";
    }
    
    //Free result set
    
-   mysqli_free_result($result);
-   } else{
-   echo "No records matching your query were found.";
-   }else
+  else
    echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
  
   ?>
