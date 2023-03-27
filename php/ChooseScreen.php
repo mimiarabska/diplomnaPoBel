@@ -1,3 +1,21 @@
+<?php
+  require_once "config.php";
+   //Attempt select query execution
+   $cat_id=$_REQUEST['categoryId'];
+   $sql = "SELECT CategoryTittle FROM category WHERE CategoryID = $cat_id";
+   $result = mysqli_query($link, $sql);
+   if(mysqli_num_rows($result) > 0)
+   {
+		$row = mysqli_fetch_assoc($result);
+		$category_name = $row['CategoryTittle'];
+   }
+   
+   //Free result set
+   
+  else
+   echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+ 
+ ?>
 <!doctype html>
     <head>
 
@@ -39,67 +57,36 @@
           
 
             <article>
-            <?php
-  require_once "config.php";
-   //Attempt select query execution
-   $sql = "SELECT * FROM category";
-   $cat_tittle= "SELECT CategoryTittle FROM category";
-   $cat_id=$_REQUEST $sql['CategoryID'];
-   var_dump($cat_id);
-   if($result = mysqli_query($link, $sql ))
-   if(mysqli_num_rows($result) > 0)
 
-   {
-   echo '<a href = "category.php?categoryId=' . $cat_id['CategoryID'] . '">';
-   echo "<h2>";
-   echo ['CategoryTittle'];
-   echo"</h2>";
-   echo "</a>";
-   }
-   
-   //Free result set
-   
-  else
-   echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
- 
-  ?>
        
         <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="jelezniqtsvetilnik.jfif" alt="jelezniqtsvetilnik" style="width:100%">
-              <div class="container">
-                <h2>"Железният светилник"</h2>
-                <p class="author">Димитър Талев</p>
-                <p>"Железният светилник"е роман написан от Димитър Талев....</p>
-                <p><button class="button">Прочети</button></p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="baiganio.jfif" alt="baiganio" style="width: 100%">
-              <div class="container">
-                <h2>"Бай Ганьо"</h2>
-                <p class="author">Алеко Константинов</p>
-                <p>"Бай Ганьо" е сборник с фейлетони написан от Алеко Константинов.</p>
-                <p><button class="button">Прочети</button></p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="column">
-            <div class="card">
-              <img src="balkanskisindom.jfif" alt="Balkanskisindrom" style="width: 100%">
-              <div class="container">
-                <h2>"Балкански синдром"</h2>
-                <p class="author">Станислав Стратиев</p>
-                <p>"Балкански синдром" е комедия написана от Станислав Стратиев.</p>
-                <p><button class="button">Прочети</button></p>
-            </div>
-        </div>
-      </div>
-    </div>
+			
+			<?php
+		
+		   $sql = "SELECT LiteratureworkTittle, HistoryOfWriting, AuthorName, Image FROM literaturework WHERE CategoryID = $cat_id";
+		   $result = mysqli_query($link, $sql);
+		   if(mysqli_num_rows($result) > 0)
+		   {
+				while($row = mysqli_fetch_assoc($result))
+				{
+					echo '<div class="column">';
+					echo '<div class="card">';
+					echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork" style="width:100%"> ';
+					echo '<div class="container">';
+					echo '<h2>' . $row['LiteratureworkTittle'] . '</h2>';
+					echo '<p class="author">' . $row['AuthorName'] . '</p>';
+					echo '<p>' . substr($row['HistoryOfWriting'], 0, 60) . '</p>';
+					echo '<p><button class="button">Прочети</button></p>';
+					echo '</div>';
+					echo '</div>';
+					echo '</div>';
+					
+				}
+		   }
+		
+		?>
+
+			
+		</div>
 
          
