@@ -44,22 +44,22 @@
 <h1>Изпитни варианти и отговори за ДЗИ БЕЛ!</h1>
 <h3>Изтеглете тест:</h3>
     <div class="button-grid">
-  <button> <a href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf..." download>2007</a></button>
-    <button>ДЗИ 2008</button>
-    <button>ДЗИ 2009</button>
-    <button>ДЗИ 2010</button>
-    <button>ДЗИ 2011</button>
-    <button>ДЗИ 2012</button>
-    <button>ДЗИ 2013</button>
-    <button>ДЗИ 2014</button>
-    <button>ДЗИ 2015</button> 
-    <button>ДЗИ 2016</button> 
-    <button>ДЗИ 2017</button> 
-    <button>ДЗИ 2018</button> 
-    <button>ДЗИ 2019</button> 
-    <button>ДЗИ 2020</button> 
-    <button>ДЗИ 2021</button> 
-    <button>ДЗИ 2022</button> 
+    <a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> <button>2007</button></a>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2008</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2009</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2010</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2011</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2012</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2013</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2014</button>
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2015</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2016</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2017</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2018</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2019</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2020</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2021</button> 
+    <button><a href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download> 2022</button> 
   </div>
 
 
