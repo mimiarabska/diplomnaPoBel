@@ -14,15 +14,15 @@
  
  <nav class="col-1">
 
-  <a href="Index.php" target="_blank">Начало</a>
+  <а href="Index.php" target="_blank">Начало</а>
   
-  <a href="avtoriview.html" target="_blank">Автори</a>
+  <а href="avtoriview.html" target="_blank">Автори</а>
   
-  <a href="DZI.html" target="_blank">Тестове</a>
+  <а href="DZI.html" target="_blank">Тестове</а>
   
-  <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
+  <а href="screenfeedback.html" target=_blank>Обратна връзка</а>
 
-     <a href="AboutUs.html" target="_blank">За нас</a>
+     <а href="AboutUs.html" target="_blank">За нас</а>
  
 
  </nav>
@@ -44,22 +44,22 @@
 <h1>Изпитни варианти и отговори за ДЗИ БЕЛ!</h1>
 <h3>Изтеглете тест:</h3>
     <div class="button-grid">
-  <button> <a href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf..." download>2007</a></button>
-    <button>ДЗИ 2008</button>
-    <button>ДЗИ 2009</button>
-    <button>ДЗИ 2010</button>
-    <button>ДЗИ 2011</button>
-    <button>ДЗИ 2012</button>
-    <button>ДЗИ 2013</button>
-    <button>ДЗИ 2014</button>
-    <button>ДЗИ 2015</button> 
-    <button>ДЗИ 2016</button> 
-    <button>ДЗИ 2017</button> 
-    <button>ДЗИ 2018</button> 
-    <button>ДЗИ 2019</button> 
-    <button>ДЗИ 2020</button> 
-    <button>ДЗИ 2021</button> 
-    <button>ДЗИ 2022</button> 
+    <button> <а href="/diplomnaPoBel/php/dzi/ДЗИ%20по%20БЕЛ%2021.05.2014.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2018.05.2016.pdf" download>2008</а></button>
+  <button> <а href="/diplomna/php/dzi/ДДЗИ%20по%20БЕЛ%2029.08.2016.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2019.05.2017.pdf" download>2009</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2021.05.2018.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2028.08.2018.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2021.05.2019.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2008.2019.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИпоБЕЛ01.06.2020.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2027.08.2020.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2019.05.2021.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2018.05.2022.pdf" download>2007</а></button>
+  <button> <а href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2025.08.2022.pdf" download>2007</а></button>
+  
+
   </div>
 
 
