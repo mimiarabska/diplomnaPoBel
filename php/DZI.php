@@ -44,7 +44,7 @@
 <h1>Изпитни варианти и отговори за ДЗИ БЕЛ!</h1>
 <h3>Изтеглете тест:</h3>
     <div class="button-grid">
-   <a href="/dzi/1.pdf" download>2007</a>
+  <button> <a href="/diplomna/php/dzi/ДЗИ%20по%20БЕЛ%2005.2015.pdf" download>2007</a></button>
     <button>ДЗИ 2008</button>
     <button>ДЗИ 2009</button>
     <button>ДЗИ 2010</button>
