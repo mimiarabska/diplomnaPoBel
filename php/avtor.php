@@ -67,7 +67,7 @@
         {
              while($row = mysqli_fetch_assoc($result))
              {
-                 echo '<h1>'. $row['AuthorName'] . '</h1S>';
+                 echo '<h1>'. $row['AuthorName'] . '</h1>';
                  echo '<div class="center">';
                  echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork"> ';
                  echo '<p>"'. $row ['Biography'].'"</p>';
