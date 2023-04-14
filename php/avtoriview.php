@@ -43,6 +43,7 @@
 <h2>A</h2>
 <?php
 
+
   require_once "config.php";
    //Attempt select query execution
    $authors = array("Алеко Константинов", "Атанас Далчев", "Борис Христов", "Виктор Пасков", "Димитър Талев", "Диsмчо Дебелянов", "Елин Пелин", "Елисавета Багряна", "Емилиян Станев"," Иван Вазов", "Йордан Йовков", "Йордан Радичков", "Никола Вапцаров");
@@ -69,6 +70,15 @@
 <h2>Б</h2>
 <br><a href="https://bg.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2">Борис Христов</a>
 <h2>В</h2>
+
+ 
+  
+<a href="avtor.php">Алеко Константинов</a>
+<br><a href="">Атанас Далчев</a>
+<h2>Б</h2>
+<br><a href="https://bg.wikipedia.org/wiki/%D0%91%D0%BE%D1%80%D0%B8%D1%81_%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2">Борис Христов</a>
+echo '<h2>В</h2>';
+>>>>>>> 9fd9ec92bbe6b39f2fe968b1c9d49c5a422af3fb
 <br><a href="https://bg.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80_%D0%9F%D0%B0%D1%81%D0%BA%D0%BE%D0%B2">Виктор Пасков</a>
 <h2>Г</h2>
 <p>---</p>
@@ -116,7 +126,11 @@
 <a href="https://bg.wikipedia.org/wiki/%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE_%D0%91%D0%BE%D1%82%D0%B5%D0%B2">Христо Ботев</a><br>
 <a href="https://bg.wikipedia.org/wiki/%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE_%D0%A1%D0%BC%D0%B8%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8">Христо Смирненски</a>
 <a href="https://bg.wikipedia.org/wiki/%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE_%D0%A4%D0%BE%D1%82%D0%B5%D0%B2">Христо Фотев</a>
+<<<<<<< HEAD
 
+=======
+?>
+>>>>>>> 9fd9ec92bbe6b39f2fe968b1c9d49c5a422af3fb
 
 </article>
 </body>
