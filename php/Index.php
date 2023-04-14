@@ -58,7 +58,7 @@
    if($result = mysqli_query($link, $sql ))
    if(mysqli_num_rows($result) > 0){
    while($row = mysqli_fetch_array($result)){
-   echo '<a href="category.php?categoryId=' . $row['CategoryID'] . '">';
+   echo '<a href="choosescreen.php?categoryId=' . $row['CategoryID'] . '">';
    echo "<button>";
    echo $row['CategoryTittle'];
    echo"</button>";
