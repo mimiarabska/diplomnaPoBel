@@ -11,15 +11,15 @@
  
  <nav class="col-1">
 
-    <a href="Index.php" target="_blank">Начало</a>
+    <a href="http://localhost/diplomnaPoBel/php/Index.php" target="_blank">Начало</a>
   
-    <a href="avtoriview.html" target="_blank">Автори</a>
+    <a href="http://localhost/diplomnaPoBel/php/avtoriview.php" target="_blank">Автори</a>
     
-    <a href="DZI.html" target="_blank">Тестове</a>
+    <a href="http://localhost/diplomnaPoBel/php/DZI.php" target="_blank">Тестове</a>
     
     <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
   
-       <a href="AboutUs.html" target="_blank">За нас</a>
+       <a href="http://localhost/diplomnaPoBel/php/AboutUs.php" target="_blank">За нас</a>
  
 
  </nav>
@@ -47,9 +47,7 @@
             <a href="#">Композиция</a>
             <a href="#">Основни герои</a>
             <a href="#">Тематика</a>
-            
             </nav>
-            <p>...</p>
 
 </body>
 </html>
