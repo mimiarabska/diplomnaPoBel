@@ -25,7 +25,7 @@
   
   <a href="http://localhost/diplomnaPoBel/php/DZI.php" target="_blank">Тестове</a>
   
-  <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
+  <a href="http://localhost/diplomnaPoBel/php/feedback.php?" target=_blank>Обратна връзка</a>
 
      <a href="http://localhost/diplomnaPoBel/php/AboutUs.php" target="_blank">За нас</a>
  
@@ -58,7 +58,7 @@
         <p class="title">Бази данни и Дизайн</p>
         <p>Мария е ученичка в ПГМТ "Проф. Цветан Лазаров" от 12а клас. Тя обича да пробва нови неща, обича да рисува, да пътува и да излиза с приятели в свободното си време.</p>
         <p>mimi_arabska@abv.bg</p>
-        <a href="screenfeedback.php" target=_blank> <button class="button">Свържи се с нас</button></a>
+        <a href="http://localhost/diplomnaPoBel/php/feedback.php?" target=_blank> <button class="button">Свържи се с нас</button></a>
       </div>
     </div>
   </div>
@@ -71,7 +71,7 @@
         <p class="title">Бази данни и Дизайн</p>
         <p>Лина е ученичка в ПГМТ "Проф. Цветан Лазаров" от 12а клас. Тя обича да пробва нови неща, обича да рисува, да пътува и да излиза с приятели в свободното си време.</p>
         <p>kidikova_3@abv.bg</p>
-        <a href="screenfeedback.php" target=_blank></a> <button class="button">Свържи се с нас</button></a>
+        <a href="http://localhost/diplomnaPoBel/php/feedback.php?" target=_blank></a> <button class="button">Свържи се с нас</button></a>
       </div>
     </div>
   </div>

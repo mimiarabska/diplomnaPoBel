@@ -17,7 +17,7 @@
     
     <a href="http://localhost/diplomnaPoBel/php/DZI.php" target="_blank">Тестове</a>
     
-    <a href="screenfeedback.html" target=_blank>Обратна връзка</a>
+    <a href="http://localhost/diplomnaPoBel/php/feedback.php?" target=_blank>Обратна връзка</a>
   
        <a href="http://localhost/diplomnaPoBel/php/AboutUs.php" target="_blank">За нас</a>
  
