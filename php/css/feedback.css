@@ -48,16 +48,8 @@
         border: 1px solid #CCDEDC;
     }
 
-    /* search button*/
-    header > button{
-          height: 54px;
-      width: 94px;
-      background-color: rgb(50, 52, 54);
-      color: #ffffff;
-      text-transform: uppercase;
-      border-style: none;
-      border-radius: 50px;
-    }
+   
+   
     header > button:hover {
       background-color: steelblue;
     }

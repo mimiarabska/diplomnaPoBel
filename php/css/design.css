@@ -46,6 +46,16 @@ align-items: stretch;
     flex-direction: column;
     flex: 5;
   }
+  .col-2 > button
+  {
+    height: 54px;
+    width: 94px;
+    font-style: italic;
+    background-color: rgb(50, 52, 54);
+    color: #ffffff;
+    border-style: none;
+    border-radius: 50px;
+  }
   .content {
     display: flex;
     flex-direction: row;
@@ -55,6 +65,7 @@ align-items: stretch;
     flex: 4;
     min-height: 60vh;
   }
+  .content > search
   footer {
     background: skyblue;
     height: 20vh;
@@ -65,40 +76,8 @@ align-items: stretch;
   }
    
   
-  .myForm {
-    display: flex;
-    background-color: skyblue;
-    border-radius: 3px;
-    padding: 1.8em;
-  }
-  .message {
-   	margin-right: 2em; 
-    display: flex;
-    flex-direction: column;
-
-  }
-  .message > textarea {
-   flex: 1; 
-   min-width: 18em;
-
-  }
-  .contact {
-   	flex: 1; 
-  }
-  .contact input {
-    width: 100%;
-  }
-  .contact input,
-  .contact button {
-    padding: 1em;
-    margin-bottom: 1em;
-
-  }
-  .contact button {
-   background: grey;
-   color: white;
-   border: 0;
-  }
+  
+  
   
 
       header{
@@ -117,6 +96,14 @@ align-items: stretch;
     header > button{
       height: 54px;
       width: 94px;
+      font-style: italic;
+      appearance: auto;
+      writing-mode: horizontal-tb !important;
+      font-style: 100%;
+      font-style: italic;
+      font-size: 20px;
+      font-family: Noto sans;
+      text-rendering: auto;
       background-color: rgb(50, 52, 54);
       color: #ffffff;
       border-style: none;
