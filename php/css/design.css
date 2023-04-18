@@ -19,9 +19,8 @@ align-items: stretch;
 
    }
    body{
-  background-image: url(https://scontent.fsof8-1.fna.fbcdn.net/v/t1.15752-9/328973276_511289307844941_8170641312039725254_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=D_SI48woIcEAX94QCGF&_nc_ht=scontent.fsof8-1.fna&oh=03_AdShzDjjZxg41VNcfvW4ZLPwiPdrnF-k2MXwaC11S4WLJw&oe=641B2A86);
-
- }
+    background-image:  url("../Images/background.jpg");
+  }
     nav > a:hover {
           background-color: steelblue;
         }

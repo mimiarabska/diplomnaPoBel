@@ -68,19 +68,25 @@
     </div>
     
     <?php
+    ini_set("SMTP","smtp.gmail.com");
+    ini_set("smtp_port","587");
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $to = 'mimi_arabska@abv.bg'; // your email address
-        $subject = 'Website';
-      
-        $message = 'Message: ' . $_POST['msg'] . "\n";
-        $message .= 'Name: ' . $_POST['name'] . "\n";
-        $message .= 'Email: ' . $_POST['email'] . "\n";
-      
-        $headers = 'From: ' . $_POST['email'] . "\r\n" .
-          'Reply-To: ' . $_POST['email'] . "\r\n" .
-          'X-Mailer: PHP/' . phpversion();
-      
-          mail($to, $subject, $message, $headers);
+        $headers = array(
+            'From: ' . $_POST['email'],
+            'Reply-To: ' . $_POST['email'],
+            'X-Mailer: PHP/' . phpversion()
+        );
+        
+        $smtp = Mail::factory('smtp', array(
+            'host' => 'smtp.gmail.com',
+            'port' => '587',
+            'auth' => true,
+            'username' => 'your_username@gmail.com',
+            'password' => 'your_password'
+        ));
+        
+        $mail = $smtp->send($to, $headers, $message);
+        
       }
     ?>
 </form>

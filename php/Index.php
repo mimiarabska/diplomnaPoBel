@@ -28,11 +28,7 @@
   
   <header>
    
-<div class="back-link">
-  <a href="#" onclick="history.back()">
-    <span class="arrow">&larr;</span> Назад
-  </a>
-</div>
+
 <input type="text">
   
   <button>Търсене</button>
