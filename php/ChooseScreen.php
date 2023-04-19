@@ -18,8 +18,9 @@
  ?>
 <!doctype html>
     <head>
-
-        <title>Literatureworks</title>
+    <?php
+        echo '<title>'. $row['CategoryTittle'] .'</title>';
+         ?>
         <link rel = "stylesheet" href="css/design.css">
         <link rel = "stylesheet" href="css/ChooseScreen.css">
         <meta charset="UTF-8">

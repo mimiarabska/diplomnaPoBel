@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 
-    <title>Literaturework</title>
+    <title>Начало</title>
     <link rel = "stylesheet" href="css/design.css">
     <link rel = "stylesheet" href="css/Index.css">
 	<meta charset="UTF-8">

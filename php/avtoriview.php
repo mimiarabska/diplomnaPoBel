@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 
-    <title>Literaturework</title>
+    <title>Автори</title>
     <link rel = "stylesheet" href="css/design.css">
     <link rel = "stylesheet" href="css/avtoriview.css">
 	<meta charset="UTF-8">

@@ -6,7 +6,7 @@
   ?>
 <head>
 
-<title>feedbackscreen</title>
+<title>Обратна връзка</title>
 
 <link rel = "stylesheet" href="css/design.css">
 <link rel = "stylesheet" href="css/feedback.css">
