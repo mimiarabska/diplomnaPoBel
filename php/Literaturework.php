@@ -3,7 +3,7 @@
 
     <title>Произведение</title>
     <link rel = "stylesheet" href="css/design.css">
-    <link rel = "stylesheet" href="css/Literaturework.css">
+    <link rel = "stylesheet" type = "text/css" href="css/Literaturework.css">
 	<meta charset="UTF-8">
 </head>
         
