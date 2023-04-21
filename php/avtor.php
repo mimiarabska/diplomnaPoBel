@@ -58,7 +58,8 @@
          <article>
          
              <div class="center">
-              
+          
+
              <?php
 		
         $sql = "SELECT AuthorName, Biography, Image FROM author WHERE AuthorID = $author_id";
