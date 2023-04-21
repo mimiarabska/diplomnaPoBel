@@ -86,11 +86,13 @@ align-items: center;
     <article>
         <?php
         require_once "config.php"; 
-    $lit = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework";
-    $result=  mysqli_query($link,$lit);
+        $lit_Id= $_REQUEST['litId'];
+    $sql = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework WHERE LiteratureworkID= $lit_Id";
+    $result=  mysqli_query($link,$sql);
    if(mysqli_num_rows($result) > 0)
 	{
-        $row = mysqli_fetch_array($result);
+        while($row = mysqli_fetch_assoc($result))
+        {
         echo '<a href="Literaturework.php?literatureworkId=' . $row['LiteratureworkID'] . '">';
         echo '<h2 style="text-align:center">' . $row['LiteratureworkTittle'] . '</h2>';
         echo '<h3 style="text-align:center">' . $row['AuthorName'] . '</h3>';
@@ -108,7 +110,7 @@ align-items: center;
         echo '<div>"'.$row['Composition'].'"</div>';
         echo '<div>"'.$row['Maincharacters'].'"</div>';
         echo '<div>"'.$row['theme'].'"</div>';
-
+         }
 
     }
     ?>
