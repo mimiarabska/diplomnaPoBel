@@ -19,8 +19,9 @@
  ?>
 <!DOCTYPE html>
      <head>
-     
-         <title>Literaturework</title>
+     <?php
+        echo '<title>'. $row['AuthorName'] .'</title>';
+         ?>
          <link rel = "stylesheet" href="css/design.css">
          <link rel = "stylesheet" href="css/avtor.css">
            <meta charset="UTF-8">
@@ -70,7 +71,7 @@
              {
                  echo '<h1>'. $row['AuthorName'] . '</h1>';
                  echo '<div class="center">';
-                 echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork"> ';
+                 echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork" class ="center";> ';
                  echo '<p>"'. $row ['Biography'].'"</p>';
                  echo '</div>';
                  

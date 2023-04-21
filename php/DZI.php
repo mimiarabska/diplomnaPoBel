@@ -5,7 +5,7 @@
 
 <head>
 
-<title>DZI</title>
+<title>Тестове</title>
 <link rel = "stylesheet" href="css/design.css">
 <link rel = "stylesheet" href="css/DZI.css">
 	<meta charset="UTF-8">

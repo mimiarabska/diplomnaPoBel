@@ -1,11 +1,11 @@
-nav2 {
+nav.navigation {
     display: flex;
     flex-direction: row;
 justify-content: space-around;
 align-items: center;
    }
 
-    b{
+    a{
         position:relative;
         text-decoration: none;
         color: #222;
@@ -14,8 +14,8 @@ align-items: center;
         padding: 0 20px;
         cursor: pointer;
     }
-    b:before,
-    b:after{
+    a:before,
+    a:after{
         content:"";
         position: absolute;
         height:3px;
@@ -23,17 +23,17 @@ align-items: center;
         background:rgb(143, 189, 201);
         transition: .5s;
     }
-    b:after{
+    a:after{
         left:0;
         bottom: -10px;
     
     }
-    b:before{
+    a:before{
         right: 0;
         top: -10px;
     }
-    b:hover:after,
-    b:hover:before{
+    a:hover:after,
+    a:hover:before{
         width: 100%;
     }
 

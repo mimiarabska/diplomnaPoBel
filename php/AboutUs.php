@@ -5,7 +5,7 @@
 
 <head>
 
-<title>aboutusscreen</title>
+<title>За Нас</title>
 <link rel = "stylesheet" href="css/design.css">
 <link rel = "stylesheet" href="css/AboutUs.css">
 	<meta charset="UTF-8">
