@@ -62,7 +62,7 @@
 				$prevLetter = $currentLetter;
 			}
 			
-			echo '<br><a href="avtor.php?AuthorId=' . $row['AuthorID'] . '">'.$row['AuthorName'].' </a>';
+			echo '<br><a href="avtor.php?authorId=' . $row['AuthorID'] . '">'.$row['AuthorName'].' </a>';
 			$prevLetter = $currentLetter;
 			
 			 
