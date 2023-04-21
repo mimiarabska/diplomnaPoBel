@@ -1,11 +1,11 @@
-    article > button {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
+nav.navigation {
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+align-items: center;
+   }
 
-    article > button{
+    a{
         position:relative;
         text-decoration: none;
         color: #222;
@@ -14,8 +14,8 @@
         padding: 0 20px;
         cursor: pointer;
     }
-    article >button:before,
-    article >button:after{
+    a:before,
+    a:after{
         content:"";
         position: absolute;
         height:3px;
@@ -23,17 +23,17 @@
         background:rgb(143, 189, 201);
         transition: .5s;
     }
-    article >button:after{
+    a:after{
         left:0;
         bottom: -10px;
     
     }
-    article >button:before{
+    a:before{
         right: 0;
         top: -10px;
     }
-    article >button:hover:after,
-    article >button:hover:before{
+    a:hover:after,
+    a:hover:before{
         width: 100%;
     }
 

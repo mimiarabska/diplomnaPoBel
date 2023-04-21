@@ -51,12 +51,12 @@
    $result=  mysqli_query($link,$authors);
    if(mysqli_num_rows($result) > 0)
 	{
-		$prevLetter = 'c';
+		$prevLetter = 'с';
 		 while($row = mysqli_fetch_assoc($result))
 		 {
 			 
-			$currentLetter = substr($row['AuthorName'], 0, 1);
-			//var_dump($currentLetter);
+			$currentLetter = mb_substr($row['AuthorName'], 0, 1);
+
 			if($currentLetter !== $prevLetter){
 				echo "<h2> $currentLetter </h2>";
 				$prevLetter = $currentLetter;
