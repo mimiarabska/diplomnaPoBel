@@ -84,21 +84,35 @@ align-items: center;
     <main class="content">
     
     <article>
-        <h2 style="text-align:center">Литературна творба</h2>
-        <h3 style="text-align:center">Автор</h3>
-        <nav2 class="navigation">
-            <a href="#">Съдържание</a>
-            <a href="#">Творческа история</a>
-            <a href="#">Жанр</a>
-            <a href="#">Композиция</a>
-            <a href="#">Основни герои</a>
-            <a href="#">Тематика</a>
-            </nav2>
-            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            <div>...</div>
-            <div>...</div>
-            <div>...</div>
-            <div>...</div>
+        <?php
+        require_once "config.php"; 
+    $lit = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework";
+    $result=  mysqli_query($link,$lit);
+   if(mysqli_num_rows($result) > 0)
+	{
+        $row = mysqli_fetch_array($result);
+        echo '<a href="Literaturework.php?literatureworkId=' . $row['LiteratureworkID'] . '">';
+        echo '<h2 style="text-align:center">' . $row['LiteratureworkTittle'] . '</h2>';
+        echo '<h3 style="text-align:center">' . $row['AuthorName'] . '</h3>';
+        echo '<nav2 class="navigation">';
+        echo '<a href="#">Съдържание</a>';
+        echo '<a href="#">Творческа история</a>';
+        echo '<a href="#">Жанр</a>';
+        echo '<a href="#">Композиция</a>';
+        echo '<a href="#">Основни герои</a>';
+        echo '<a href="#">Тематика</a>';
+        echo  '</nav2>';
+        echo '<div>"'.$row['Content'].'"</div>';
+        echo '<div>"'.$row['HistoryOfWriting'].'"</div>';
+        echo '<div>"'.$row['Genre'].'"</div>';
+        echo '<div>"'.$row['Composition'].'"</div>';
+        echo '<div>"'.$row['Maincharacters'].'"</div>';
+        echo '<div>"'.$row['theme'].'"</div>';
+
+
+    }
+    ?>
+       
 
 </body>
 </html>
