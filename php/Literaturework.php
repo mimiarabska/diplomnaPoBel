@@ -1,7 +1,26 @@
 <!DOCTYPE html>
-<head>
+<?php
+require_once "config.php";
+$lit_Id= $_REQUEST['litId'];
+$sql = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework WHERE LiteratureworkID= $lit_Id";
+$result= mysqli_query($link,$sql);
+if(mysqli_num_rows($result) > 0)
+   {
+		$row = mysqli_fetch_assoc($result);
+		$litTitle = $row['LiteratureworkTittle'];
+   }
+   
+   //Free result set
+   
+  else
+   echo "ERROR: Cold not able to execute $sql. " . mysqli_error($link);
+ 
 
-    <title>Произведение</title>
+?>
+<head>
+<?php
+    echo '<title>' . $row['LiteratureworkTittle'].'</title>';
+    ?>
     <link rel = "stylesheet" href="css/design.css">
     <link rel = "stylesheet" href="css/Literaturework.css">
 	<meta charset="UTF-8">
@@ -85,10 +104,10 @@ align-items: center;
     
     <article>
         <?php
-        require_once "config.php"; 
+        
         $lit_Id= $_REQUEST['litId'];
     $sql = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework WHERE LiteratureworkID= $lit_Id";
-    $result=  mysqli_query($link,$sql);
+    $result= mysqli_query($link,$sql);
    if(mysqli_num_rows($result) > 0)
 	{
         while($row = mysqli_fetch_assoc($result))

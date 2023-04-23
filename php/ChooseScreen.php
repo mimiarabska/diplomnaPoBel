@@ -63,27 +63,29 @@
         <div class="row">
 			
 			<?php
-		
-		   $sql = "SELECT LiteratureworkTittle, HistoryOfWriting, AuthorName, Image FROM literaturework WHERE CategoryID = $cat_id";
-		   $result = mysqli_query($link, $sql);
-		   if(mysqli_num_rows($result) > 0)
-		   {
-				while($row = mysqli_fetch_assoc($result))
-				{
-					echo '<div class="column">';
-					echo '<div class="card">';
-					echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork" style="width:100%"> ';
-					echo '<div class="container">';
-					echo '<h2>' . $row['LiteratureworkTittle'] . '</h2>';
-					echo '<p class="author">' . $row['AuthorName'] . '</p>';
-					echo '<p>' . substr($row['HistoryOfWriting'], 0, 60) . '</p>';
-					echo '<p><button class="button">Прочети</button></p>';
-					echo '</div>';
-					echo '</div>';
-					echo '</div>';
-					
-				}
-		   }
+		 $sql = "SELECT  LiteratureworkID, LiteratureworkTittle, HistoryOfWriting, AuthorName, Image FROM literaturework WHERE CategoryID = $cat_id";
+     $litId= "SELECT LiteratureworkID FROM literaturework WHERE CategoryID = $cat_id";
+    $result = mysqli_query($link, $sql);
+    if(mysqli_num_rows($result) > 0)
+    {
+        while($row = mysqli_fetch_assoc($result))
+        {
+          echo '<div class="column">';
+          echo '<div class="card">';
+          echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork" style="width:100%"> ';
+          echo '<div class="container">';
+          echo '<h2>' . $row['LiteratureworkTittle'] . '</h2>';
+          echo '<p class="author">' . $row['AuthorName'] . '</p>';
+          echo '<p>' . substr($row['HistoryOfWriting'], 0, 60) . '</p>';
+
+                    echo '<p>';
+                    echo '<button class="button"><a href="Literaturework.php?litId='. $row['LiteratureworkID']. '"> Прочети </a></button>';
+                  
+          echo '</div>';
+          echo '</div>';
+          echo '</div>';
+        }
+    }
 		
 		?>
 
