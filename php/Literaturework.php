@@ -104,34 +104,59 @@ align-items: center;
     
     <article>
         <?php
-        
+        $openedTab= $_REQUEST['openedTab'];
+        if($openedTab== NULL){
+            $openedTab= "0";
+        }
         $lit_Id= $_REQUEST['litId'];
     $sql = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework WHERE LiteratureworkID= $lit_Id";
     $result= mysqli_query($link,$sql);
    if(mysqli_num_rows($result) > 0)
 	{
-        while($row = mysqli_fetch_assoc($result))
-        {
-        echo '<a href="Literaturework.php?literatureworkId=' . $row['LiteratureworkID'] . '">';
+        $row = mysqli_fetch_assoc($result);
+
         echo '<h2 style="text-align:center">' . $row['LiteratureworkTittle'] . '</h2>';
         echo '<h3 style="text-align:center">' . $row['AuthorName'] . '</h3>';
         echo '<nav2 class="navigation">';
-        echo '<a href="#">Съдържание</a>';
-        echo '<a href="#">Творческа история</a>';
-        echo '<a href="#">Жанр</a>';
-        echo '<a href="#">Композиция</a>';
-        echo '<a href="#">Основни герои</a>';
-        echo '<a href="#">Тематика</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=0">Съдържание</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=1">Творческа история</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=2">Жанр</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=3">Композиция</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=4">Основни герои</a>';
+        echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=5">Тематика</a>';
         echo  '</nav2>';
-        echo '<div>"'.$row['Content'].'"</div>';
-        echo '<div>"'.$row['HistoryOfWriting'].'"</div>';
-        echo '<div>"'.$row['Genre'].'"</div>';
-        echo '<div>"'.$row['Composition'].'"</div>';
-        echo '<div>"'.$row['Maincharacters'].'"</div>';
-        echo '<div>"'.$row['theme'].'"</div>';
-         }
+        if($openedTab=="0"){
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Content']).'</div>';
+        }
+        elseif($openedTab =="1")
+        {
+        echo '<div>'.$row['HistoryOfWriting'].'</div>';
+        
+        }
+        elseif($openedTab =="2")
+        {
+        echo '<div>'.$row['Genre'].'</div>';
+        }
+        elseif($openedTab =="3")
+        {
+        echo '<div>'.$row['Composition'].'</div>';
+        }
+        elseif($openedTab =="4")
+        {
+        echo '<div>'.$row['Maincharacters'].'</div>';
+        }
+        elseif($openedTab =="5")
+        {
+        echo '<div>'.$row['theme'].'</div>';
+        }
 
     }
+
+    function ReplaceNewLinesWithBrs($rawText)
+    {
+        return mb_eregi_replace("\n", "<br>", $rawText);
+    }
+
     ?>
        
 
