@@ -104,17 +104,20 @@ align-items: center;
     
     <article>
         <?php
-        $openedTab= $_REQUEST['openedTab'];
-        if($openedTab== NULL){
+        
+        $lit_Id= $_REQUEST['litId'];
+
+        if(array_key_exists("openedTab",$_REQUEST)){
+            $openedTab= $_REQUEST['openedTab'];
+        }
+        else {
             $openedTab= "0";
         }
-        $lit_Id= $_REQUEST['litId'];
     $sql = "SELECT LiteratureworkID, LiteratureworkTittle,AuthorID, AuthorName,Content, HistoryOfWriting, Genre,Composition,Maincharacters,theme FROM literaturework WHERE LiteratureworkID= $lit_Id";
     $result= mysqli_query($link,$sql);
    if(mysqli_num_rows($result) > 0)
 	{
         $row = mysqli_fetch_assoc($result);
-
         echo '<h2 style="text-align:center">' . $row['LiteratureworkTittle'] . '</h2>';
         echo '<h3 style="text-align:center">' . $row['AuthorName'] . '</h3>';
         echo '<nav2 class="navigation">';
