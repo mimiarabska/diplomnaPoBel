@@ -79,7 +79,7 @@
           echo '<p>' . substr($row['HistoryOfWriting'], 0, 60) . '</p>';
 
                     echo '<p>';
-                    echo '<button class="button"><a href="Literaturework.php?litId='. $row['LiteratureworkID']. '"> Прочети </a></button>';
+                    echo '<a href="Literaturework.php?litId='. $row['LiteratureworkID']. '"><button class="button"> Прочети </button></a>';
                   
           echo '</div>';
           echo '</div>';
