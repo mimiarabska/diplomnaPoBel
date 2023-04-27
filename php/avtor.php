@@ -56,7 +56,7 @@
      
       <main class="content">
      
-         <article>
+         <article>  
          
              <div class="center">
           

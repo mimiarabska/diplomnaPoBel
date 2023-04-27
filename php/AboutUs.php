@@ -47,9 +47,9 @@
     <main class="content">
 	
 	<article>
-	
 <h2 style="text-align:center">Създатели на сайта</h2>
 <div class="row">
+<div class ="center">
   <div class="column">
     <div class="card">
       <img src="Images/mariaphoto.jpg" alt="Maria" style="width:100%" style = "height:100%">
@@ -74,6 +74,6 @@
         <a href="http://localhost/diplomnaPoBel/php/feedback.php?" target=_blank></a> <button class="button">Свържи се с нас</button></a>
       </div>
     </div>
+    
   </div>
 
-  

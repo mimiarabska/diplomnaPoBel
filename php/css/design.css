@@ -20,10 +20,11 @@ align-items: stretch;
 
    }
    body{
-    background-image:  url("../Images/background.jpg");
+    background-image:  url("../Images/wallpaper.avif");
+    background-size: cover;
   }
     nav > a:hover {
-          background-color: steelblue;
+          background-color: rgb(138, 102, 89);
         }
 
 
@@ -39,7 +40,7 @@ align-items: stretch;
     margin: 0;
   }
   .col-1 {
-    background: rgb(143, 189, 201);
+    background-color:rgb(223, 183, 168);
         flex: 1;
   }
   .col-2 {
@@ -68,7 +69,7 @@ align-items: stretch;
   }
   .content > search
   footer {
-    background: skyblue;
+    background: rgb(138, 102, 89);
     height: 20vh;
   }
   
@@ -90,9 +91,9 @@ align-items: stretch;
     header  > input{
         height: 50px;
         width: 320px;
-        background-color: #CCDEDC;
+        background-color: rgb(221, 214, 212);
         border-radius: 50px;
-        border: 1px solid #CCDEDC;
+        border: 2px solid #818d8b;
     }
     header > button{
       height: 54px;
@@ -111,6 +112,6 @@ align-items: stretch;
       border-radius: 50px;
         }
         header > button:hover {
-          background-color: steelblue;
+          background-color: rgb(138, 102, 89);
         }
     
