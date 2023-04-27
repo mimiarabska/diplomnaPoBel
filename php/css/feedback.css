@@ -1,6 +1,6 @@
 .myForm {
     display: flex;
-    background-color:  rgb(143, 189, 201);
+    background-color:  rgb(223, 183, 168);
     border-radius: 3px;
     padding: 1.8em;
   }
@@ -40,16 +40,5 @@
         align-items: center;
         margin: 0 auto;
     }
-    header  > input{
-        height: 50px;
-        width: 320px;
-        background-color: #CCDEDC;
-        border-radius: 50px;
-        border: 1px solid #CCDEDC;
-    }
 
    
-   
-    header > button:hover {
-      background-color: steelblue;
-    }

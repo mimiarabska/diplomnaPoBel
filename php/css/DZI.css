@@ -23,7 +23,7 @@
       font-size: 20px;
       font-family: Noto sans;
       text-rendering: auto;
-      color: white;
+      color: black;
       letter-spacing: normal;
       text-indent: 0px;
       display: inline-block;
@@ -31,7 +31,7 @@
       align-items: flex-start;
       cursor: default;
       box-sizing: border-box;
-      background-color: rgb(143, 189, 201);
+      background-color: rgb(223, 183, 168);
       margin: 0em;
       padding: 1px 6px;
       border-width: 3px;
@@ -42,5 +42,5 @@
   
 
   .button-grid button:hover {
-    background-color: #555;
+    background-color: rgb(220, 164, 144);
   }
