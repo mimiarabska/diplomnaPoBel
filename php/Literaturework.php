@@ -41,7 +41,7 @@ align-items: center;
         padding: 0 20px;
         cursor: pointer;
     }
-    nav2.navigation> a:before,
+     a:before,
     a:after{
         content:"";
         position: absolute;
@@ -51,16 +51,16 @@ align-items: center;
         transition: .5s;
         
     }
-    nav2.navigation> a:after{
+     a:after{
         left:0;
         bottom: -10px;
     
     }
-    nav2.navigation> a:before{
+        a:before{
         right: 0;
         top: -10px;
     }
-    nav2.navigation> a:hover:after,
+    a:hover:after,
     a:hover:before{
         width: 100%;
     }
