@@ -32,7 +32,7 @@ justify-content: space-around;
 align-items: center;
    }
 
-    a{
+    nav2.navigation> a{
         position:relative;
         text-decoration: none;
         color: #222;
@@ -41,33 +41,33 @@ align-items: center;
         padding: 0 20px;
         cursor: pointer;
     }
-    a:before,
+    nav2.navigation> a:before,
     a:after{
         content:"";
         position: absolute;
         height:3px;
         width:0;
-        background:rgb(143, 189, 201);
+        background: rgb(220, 164, 144);
         transition: .5s;
+        
     }
-    a:after{
+    nav2.navigation> a:after{
         left:0;
         bottom: -10px;
     
     }
-    a:before{
+    nav2.navigation> a:before{
         right: 0;
         top: -10px;
     }
-    a:hover:after,
+    nav2.navigation> a:hover:after,
     a:hover:before{
         width: 100%;
     }
 
     div.box
     {
-
-      
+        text-align: justify; 
     }
 </style>
 </head>
@@ -128,31 +128,32 @@ align-items: center;
         echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=4">Основни герои</a>';
         echo '<a href="Literaturework.php?litId='.$lit_Id.'&openedTab=5">Тематика</a>';
         echo  '</nav2>';
+        echo '<div class = "box">';
         if($openedTab=="0"){
         echo '<div>'.ReplaceNewLinesWithBrs($row['Content']).'</div>';
         }
         elseif($openedTab =="1")
         {
-        echo '<div>'.$row['HistoryOfWriting'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['HistoryOfWriting']).'</div>';
         
         }
         elseif($openedTab =="2")
         {
-        echo '<div>'.$row['Genre'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Genre']).'</div>';
         }
         elseif($openedTab =="3")
         {
-        echo '<div>'.$row['Composition'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Composition']).'</div>';
         }
         elseif($openedTab =="4")
         {
-        echo '<div>'.$row['Maincharacters'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Maincharacters']).'</div>';
         }
         elseif($openedTab =="5")
         {
-        echo '<div>'.$row['theme'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['theme']).'</div>';
         }
-
+echo '</div>';
     }
 
     function ReplaceNewLinesWithBrs($rawText)
