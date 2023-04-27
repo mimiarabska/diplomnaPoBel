@@ -133,24 +133,24 @@ align-items: center;
         }
         elseif($openedTab =="1")
         {
-        echo '<div>'.$row['HistoryOfWriting'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['HistoryOfWriting']).'</div>';
         
         }
         elseif($openedTab =="2")
         {
-        echo '<div>'.$row['Genre'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Genre']).'</div>';
         }
         elseif($openedTab =="3")
         {
-        echo '<div>'.$row['Composition'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Composition']).'</div>';
         }
         elseif($openedTab =="4")
         {
-        echo '<div>'.$row['Maincharacters'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['Maincharacters']).'</div>';
         }
         elseif($openedTab =="5")
         {
-        echo '<div>'.$row['theme'].'</div>';
+        echo '<div>'.ReplaceNewLinesWithBrs($row['theme']).'</div>';
         }
 
     }
