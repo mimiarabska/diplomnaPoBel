@@ -57,10 +57,6 @@
       <main class="content">
      
          <article>  
-         
-             <div class="center">
-          
-
              <?php
 		
         $sql = "SELECT AuthorName, Biography, Image FROM author WHERE AuthorID = $author_id";
@@ -71,9 +67,10 @@
              {
                  echo '<h1>'. $row['AuthorName'] . '</h1>';
                  echo '<div class="center">';
-                 echo '<img src="' . $row['Image'] . '" alt="No image found for this litwork" class ="center";> ';
-                 echo '<p>"'. $row ['Biography'].'"</p>';
+                 echo '<img src=' . $row['Image'] . ' alt="No image found for this litwork" class ="center";> ';
                  echo '</div>';
+                 echo '<p>'. $row ['Biography'].'</p>';
+                 
                  
                  
              }

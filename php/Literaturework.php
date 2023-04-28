@@ -41,7 +41,7 @@ align-items: center;
         padding: 0 20px;
         cursor: pointer;
     }
-     a:before,
+    a:before,
     a:after{
         content:"";
         position: absolute;

@@ -1,10 +1,14 @@
-CREATE TABLE Author (
+CREATE TABLE Category (
+  CategoryID int NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+  CategoryTittle VARCHAR(45)
+ 
+);CREATE TABLE Author (
 
   AuthorID int NOT NULL AUTO_INCREMENT,
   AuthorName VARCHAR(45),
   Gender VARCHAR(45) NOT NULL,
   BirthDate DATE NOT NULL,
-  Biography VARCHAR(3000) NOT NULL,
+  Biography TEXT(65535) NOT NULL,
   Country VARCHAR(45) NOT NULL,
   Image VARCHAR(150) NOT NULL,
   PRIMARY KEY (AuthorID)
@@ -31,8 +35,4 @@ CREATE TABLE Literaturework (
   FOREIGN KEY (AuthorID) REFERENCES Author (AuthorID)
   );
   
-CREATE TABLE Category (
-  CategoryID int NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-  CategoryTittle VARCHAR(45)
- 
-);
+
